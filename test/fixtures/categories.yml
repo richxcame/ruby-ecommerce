@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title_tk: MyString
+  title_en: MyString
+  title_ru: MyString
+
+two:
+  title_tk: MyString
+  title_en: MyString
+  title_ru: MyString

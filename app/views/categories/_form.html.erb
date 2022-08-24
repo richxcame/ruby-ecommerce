@@ -1,0 +1,29 @@
+<%= form_with model: category do |form| %>
+  <div>
+    <%= form.label :title_tk %><br>
+    <%= form.text_field :title_tk %>
+    <% category.errors.full_messages_for(:title_tk).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :title_en %><br>
+    <%= form.text_field :title_en %>
+    <% category.errors.full_messages_for(:title_en).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :title_ru %><br>
+    <%= form.text_field :title_ru %>
+    <% category.errors.full_messages_for(:title_ru).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

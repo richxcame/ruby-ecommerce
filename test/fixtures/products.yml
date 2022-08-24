@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title_tk: MyString
+  title_en: MyString
+  title_ru: MyString
+  description_tk: MyString
+  description_en: MyString
+  description_ru: MyString
+  category: one
+
+two:
+  title_tk: MyString
+  title_en: MyString
+  title_ru: MyString
+  description_tk: MyString
+  description_en: MyString
+  description_ru: MyString
+  category: two
