@@ -1,10 +1,12 @@
-<h1>Categories</h1>
-In our web has <%= Category.public_count %> categories!
+<h1 class="text-3xl font-bold">Categories</h1>
+<div class="font-light text-sm">
+  In our web has <%= Category.public_count %> categories!
+</div>
 
 <ul>
   <% @categories.each do |category| %>
     <% unless category.archived? %>
-      <li>
+      <li class="text-blue-600 hover:text-blue-800">
         <%= link_to category.title_tk, category %>
       </li>
     <% end %>
