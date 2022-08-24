@@ -44,6 +44,6 @@ class CategoriesController < ApplicationController
 
   private
     def category_params
-      params.require(:category).permit(:title_tk, :title_en, :title_ru)
+      params.require(:category).permit(:title_tk, :title_en, :title_ru, :status)
     end
 end
