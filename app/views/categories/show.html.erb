@@ -11,43 +11,8 @@
                   } %></li>
 </ul>
 
+<h2>Add a product:</h2>
+<%= render "products/form" %>
 
 <h2>Products</h2>
 <%= render @category.products %>
-
-<h2>Add a product:</h2>
-<%= form_with model: [ @category, @category.products.build ] do |form| %>
-  <div>
-    <%= form.label :title_tk %><br>
-    <%= form.text_field :title_tk %>
-  </div>
-
-  <div>
-    <%= form.label :title_en %><br>
-    <%= form.text_field :title_en %>
-  </div>
-
-  <div>
-    <%= form.label :title_ru %><br>
-    <%= form.text_field :title_ru %>
-  </div>
-
-  <div>
-    <%= form.label :description_tk %><br>
-    <%= form.text_field :description_tk %>
-  </div>
-
-  <div>
-    <%= form.label :description_en %><br>
-    <%= form.text_field :description_en %>
-  </div>
-
-  <div>
-    <%= form.label :description_ru %><br>
-    <%= form.text_field :description_ru %>
-  </div>
-
-  <p>
-    <%= form.submit %>
-  </p>
-<% end %>
