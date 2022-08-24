@@ -1,4 +1,6 @@
 class ProductsController < ApplicationController
+  http_basic_authenticate_with name: "richxcame", password: "more", except: [:index, :show]
+
   def create
     @category = Category.find(params[:category_id])
     @product = @category.products.create(product_params)
