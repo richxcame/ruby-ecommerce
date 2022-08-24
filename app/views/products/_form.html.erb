@@ -29,6 +29,11 @@
     <%= form.text_field :description_ru %>
   </div>
 
+  <div>
+    <%= form.label :status %><br>
+    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+  </div>
+
   <p>
     <%= form.submit %>
   </p>
